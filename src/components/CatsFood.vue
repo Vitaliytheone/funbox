@@ -1,25 +1,38 @@
 <template>
     <div class="catsBox">
-  <!-- <div>  <svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="NaN%" height="NaN%">
-<path fill-rule="evenodd"  stroke="rgb(179, 179, 179)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(242, 242, 242)"
- d="M310.000,482.000 L14.000,482.000 C7.373,482.000 2.000,476.627 2.000,470.000 L2.000,45.000 L45.000,2.000 L310.000,2.000 C316.627,2.000 322.000,7.373 322.000,14.000 L322.000,470.000 C322.000,476.627 316.627,482.000 310.000,482.000 Z"/>
-</svg></div><div><svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="NaN%" height="NaN%">
-<path fill-rule="evenodd"  stroke="rgb(179, 179, 179)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(242, 242, 242)"
- d="M310.000,482.000 L14.000,482.000 C7.373,482.000 2.000,476.627 2.000,470.000 L2.000,45.000 L45.000,2.000 L310.000,2.000 C316.627,2.000 322.000,7.373 322.000,14.000 L322.000,470.000 C322.000,476.627 316.627,482.000 310.000,482.000 Z"/>
-</svg></div><div><svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="NaN%" height="NaN%">
-<path fill-rule="evenodd"  stroke="rgb(179, 179, 179)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(242, 242, 242)"
- d="M310.000,482.000 L14.000,482.000 C7.373,482.000 2.000,476.627 2.000,470.000 L2.000,45.000 L45.000,2.000 L310.000,2.000 C316.627,2.000 322.000,7.373 322.000,14.000 L322.000,470.000 C322.000,476.627 316.627,482.000 310.000,482.000 Z"/>
-</svg></div> -->
-      <div class='border'>
+
+<div class="wrap">
+  <div class='ellipse'></div>
+  <svg
+   width="100%" height="100%">
+  <path fill-rule="evenodd" stroke="rgb(22, 152, 217)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(242, 242, 242)"
+   d="M310.000,482.000 L14.000,482.000 C7.373,482.000 2.000,476.627 2.000,470.000 L2.000,45.000 L45.000,2.000 L310.000,2.000 C316.627,2.000 322.000,7.372 322.000,14.000 L322.000,470.000 C322.000,476.627 316.627,482.000 310.000,482.000 Z"/>
+  <image class='privet' x="-50" y="0" width="370" height="361" xlink:href="../assets/funbox_logo.png" />
+  </svg>
+</div>
+
+<div class="wrap">
+  <div class='ellipse'></div>
+  <svg
+   width="100%" height="100%">
+  <path fill-rule="evenodd" stroke="rgb(22, 152, 217)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(242, 242, 242)"
+   d="M310.000,482.000 L14.000,482.000 C7.373,482.000 2.000,476.627 2.000,470.000 L2.000,45.000 L45.000,2.000 L310.000,2.000 C316.627,2.000 322.000,7.372 322.000,14.000 L322.000,470.000 C322.000,476.627 316.627,482.000 310.000,482.000 Z"/>
+  <image class='privet' x="-50" y="0" width="370" height="361" xlink:href="../assets/funbox_logo.png" />
+  </svg>
+</div>
+
+<div class="wrap">
+  <div class='ellipse'></div>
+  <svg
+   width="100%" height="100%">
+  <path fill-rule="evenodd" stroke="rgb(22, 152, 217)" stroke-width="4px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(242, 242, 242)"
+   d="M310.000,482.000 L14.000,482.000 C7.373,482.000 2.000,476.627 2.000,470.000 L2.000,45.000 L45.000,2.000 L310.000,2.000 C316.627,2.000 322.000,7.372 322.000,14.000 L322.000,470.000 C322.000,476.627 316.627,482.000 310.000,482.000 Z"/>
+  <image class='privet' x="-50" y="0" width="370" height="361" xlink:href="../assets/funbox_logo.png" />
+  </svg>
+</div>
+
+
+      <!-- <div class='border'>
         <div class="feed fuagra">
             <div class='ellipse'></div>
         </div>
@@ -29,9 +42,9 @@
       </div>
       <div class='border'>
         <div class="feed chicken"></div>
-      </div>
+      </div> -->
+<!-- width="100%" height="100%" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" -->
 
-      
   </div>
 </template>
 
@@ -41,8 +54,19 @@ export default {
 }
 </script>
 
+
 <style scoped>
 
+/* .privet {
+  position: absolute;
+  z-index: 0;
+} */
+
+.wrap {
+  position: relative;
+  width: 324px;
+  height: 484px;
+}
 
 .ellipse {
     border-radius: 50%;
@@ -64,7 +88,7 @@ export default {
 
 }
 
-.border{
+/* .border{
     position: relative;
     width: 312px;
     height: 472px;
@@ -88,22 +112,14 @@ export default {
     background-position: 55% 180%;
 }
 
-.feed::after {
-
-}
-
-.feed:hover {
-  /* background: url('../assets/Cadsa.png') */
-}
-
-/* .feed::after {
+ .feed::after {
   content: '';
    position: absolute;
    left: 0;
    top: 0;
    border-top: 30px solid white;
    border-right: 30px solid green;
-} */
+}  */
 
 
 
